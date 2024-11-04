@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin id="cordova-plugin-chunked-file-upload" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ChunkedFileUploader</name>
+    <description>Cordova plugin for chunked file upload to Azure Blob Storage.</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova, azure, blob, chunk, upload</keywords>
+
+    <js-module src="www/chunkedUploader.js" name="ChunkedFileUploader">
+        <clobbers target="cordova.plugins.ChunkedFileUploader" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        </config-file>
+        <source-file src="src/android/ChunkedFileUploader.java" target-dir="src/com/yourcompany/plugin" />
+    </platform>
+</plugin>
