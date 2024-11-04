@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-chunked-file-upload",
+  "version": "1.0.0",
+  "description": "A Cordova plugin for chunked file upload to Azure Blob Storage using HTTP and SAS token authentication.",
+  "main": "www/chunkedUploader.js",
+  "keywords": [
+    "cordova",
+    "azure",
+    "blob",
+    "chunked",
+    "upload",
+    "plugin",
+    "file upload"
+  ],
+  "author": "Your Name",
+  "license": "Apache-2.0",
+  "engines": {
+    "cordovaDependencies": {
+      "cordova-android": ">=7.0.0"
+    }
+  },
+  "cordova": {
+    "id": "cordova-plugin-chunked-file-upload",
+    "platforms": [
+      "android"
+    ]
+  }
+}
